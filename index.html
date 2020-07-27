@@ -13,6 +13,9 @@
             font-family:Arial, Helvetica, sans-serif;
         }
         a {color:whitesmoke; text-decoration: underline;}
+        body {
+            background-color:  rgb(148, 0, 136);
+        }
         header {
             background-color: mediumpurple;
             color: black;
@@ -23,6 +26,8 @@
             padding: 1.5em 0 0.5em 0;
             text-align: center;
             font-size: 1.5em;
+            width: 80%;
+            margin-right: auto; /* alineado al centro */
         }
         @keyframes shake {
             0%{transform: translate(0);}
@@ -35,25 +40,33 @@
         }
         footer {
             font-size: .8em;
-            background-color: midnightblue;
-            color: whitesmoke;
+            background: rgb(2,0,36);
+            background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgb(148, 0, 136) 100%);
+            color: white;
             padding: 1em;
+            margin: 3em 0 0 0;
+            position:fixed;
+            bottom:0px;
         }
         .sponsors, .avisoimportante, .creditos {
             margin: 0.3em 0 0.3em 0;
             text-align: justify;            
         }
         section {
-            margin: 0 25%; /* revisar y alinear */
+            margin-right: auto; /* alineado al centro */
             width: 400px;
+            margin-left: auto;
+            background-color: rgb(232, 136, 245);
         }
         section.a {
             text-align: center;
-            width: 12em;
-            border: 1px solid grey;
-            margin: 0.3em 0 0 0;
+            width: 50%;
+            max-width: 12em;
+            margin: 0.5em 0 0 0;
             padding: 0.5em 0;
             }
+        section.a:hover {
+            font-weight: 700;}
     </style>
     
 </head>
@@ -85,6 +98,7 @@
             (c) viBrrrapp <a href="https://github.com/alelazcano">desarrollo y diseño web</a> para pasar el aburrimiento en la <a href="#" title="estadísticas del COVID19 - coronavirus en números">cuarentena covid19</a>.
         </div>
     </footer>
+
 </body>
 </html>
 
