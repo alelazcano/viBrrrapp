@@ -5,21 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>viBrrrapp</title>
     <meta name="description" content="viBrrrapp es una pequeña 'app' que te permite jugar con diferentes patrones de vobración, directamente desde tu telèfono. Úsala como masajeador, juguete ìntimo y súper discreto: ahora puedes llevar un vibrador personal en tu teléfono.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        a {color:whitesmoke; text-decoration: underline;}
+        header {
+            background-color: mediumpurple;
+            color: black;
+            height: 6em;
+        }
+        .efectoVibracion {
+            animation: shake 1.8s ease-in;
+            padding: 1.5em 0 0.5em 0;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        @keyframes shake {
+            0%{transform: translate(0);}
+            20%,40%,60%,80%{
+                transform: translate(.8em);
+                /* box-shadow: 0px 6px 20px rgba(0,0,0,0.5); */
+            }
+            10%,30%,50%{transform: translateX(-.2em);transform: translateY(-.4em);}
+            70%,100%{transform: translate(0);}
+        }
+        footer {
+            font-size: .8em;
+            background-color: midnightblue;
+            color: whitesmoke;
+            padding: 1em;
+        }
+        .sponsors, .avisoimportante, .creditos {
+            margin: 0.3em 0 0.3em 0;
+            text-align: justify;            
+        }
+        section {
+            margin: 0 25%; /* revisar y alinear */
+            width: 400px;
+        }
+        section.a {
+            text-align: center;
+            width: 12em;
+            border: 1px solid grey;
+            margin: 0.3em 0 0 0;
+            padding: 0.5em 0;
+            }
+    </style>
+    
 </head>
+
 <body>
 
-    <header>
-        Presenta
+    <header class="header">
+        <div class="efectoVibracion">viBrrrapp™</span>
     </header>
 
-    <nav>Menú de opciones</nav>
-
-    <section id="1" class="a"></section>
-    <section id="2" class="a"></section>
-    <section id="3" class="a"></section>
-    <section id="4" class="a"></section>
-    <section id="5" class="a"></section>
-    <section id="6" class="a"></section>
+    <nav class="menuDeOpciones">
+        Patrones predefinidos
+        <section id="1" class="a">Suave 🐢</section>
+        <section id="2" class="a">Intermitencia 💓</section>
+        <section id="3" class="a">Zig-zag ⚡</section>
+        <section id="4" class="a">Power 💪🏽</section>
+        <section id="5" class="a">Intensidad 🚀</section>
+        <section id="6" class="a">¡BANG! 💣</section>
+    </nav>
 
     <footer id="footer">
         <div class="sponsors">
@@ -34,3 +87,12 @@
     </footer>
 </body>
 </html>
+
+
+<!-- pendientes
+- Google Analytics
+- Pixel Facerbook
+- Fb e insta propio de la app
+- Logo definitivo, flaticon
+- Deploy y dominio (Github pages)
+-->
