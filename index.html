@@ -26,8 +26,8 @@
             padding: 1.5em 0 0.5em 0;
             text-align: center;
             font-size: 1.5em;
-            width: 80%;
-            margin-right: auto; /* alineado al centro */
+            width: 100%;
+            /*margin-right: auto;  alineado al centro */
         }
         @keyframes shake {
             0%{transform: translate(0);}
@@ -40,13 +40,14 @@
         }
         footer {
             font-size: .8em;
-            background: rgb(2,0,36);
+            /*background: rgb(2,0,36);*/
             background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgb(148, 0, 136) 100%);
             color: white;
             padding: 1em;
             margin: 3em 0 0 0;
             position:fixed;
             bottom:0px;
+            width: 100%;
         }
         .sponsors, .avisoimportante, .creditos {
             margin: 0.3em 0 0.3em 0;
@@ -89,12 +90,15 @@
         <section id="6" class="a" onclick="vib(6)">¡BANG! 💣</section>
     </nav>
 
+    <a href="#" onclick="test()">TEST</a>
+    <script>function test() {window.navigator.vibrate([200, 100,100,200,300,100,200,100,300,200,100,50,200,10,20,300,100,300,200]);}</script>
+
     <footer id="footer">
         <div class="sponsors">
             Agradezco la difusión y colaboración de amigues en madurar la idea, testeo y mejora. También a <a href="#">X</a> e <a href="#">Y</a> por la difusión.
         </div>
         <div class="avisoimportante">
-            Sólo y exclusivamente para uso EXTERNO. NO introduzca jamás elementos en sus orificios corporales si estos objetos no han sido especialmente diseñados para ese fin. ¿Masturbaciòn? <a href="·">Aprende más</a>.
+            Sólo y exclusivamente para uso EXTERNO. NO introduzca jamás elementos en sus orificios corporales si estos objetos no han sido especialmente diseñados para ese fin. ¿Masturbación? <a href="·">Aprende más</a>.
         </div>
         <div class="creditos">
             (c) viBrrrapp <a href="https://github.com/alelazcano">desarrollo y diseño web</a> para pasar el aburrimiento en la <a href="#" title="estadísticas del COVID19 - coronavirus en números">cuarentena covid19</a>.
