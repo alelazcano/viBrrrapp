@@ -1,4 +1,4 @@
-function detectaDispositivo() {
+function detectarDispositivo() {
 
     const toMatch = [/Android/i, /webOS/i, /iPhone/i, /iPad/i, /iPod/i, /BlackBerry/i, /Windows Phone/i];
     let queDispositivo = toMatch.some((toMatchItem) => { return navigator.userAgent.match(toMatchItem);});
@@ -8,7 +8,7 @@ function detectaDispositivo() {
         console.log("detectó que NO es mobile y muestra el aviso de compatibilidad");
       } // ELSE: no se necesitó la variable "si es PC", pero se puede perfeccionar el IF con otros casos
 
-}detectaDispositivo();
+}detectarDispositivo();
  
 
 function vib(param){
