@@ -17,7 +17,7 @@ function vib(param){
     {
         case '1':
         console.log(1);
-        window.navigator.vibrate([200, 100,100,200,300,100,200,100,300,200,100,50,200,10,20,300,100,300,200]);
+        window.navigator.vibrate([100,30,100,30,100,30,200,30,200,30,200,30,100,30,100,30,100]);
         break;
 
         case '2':
