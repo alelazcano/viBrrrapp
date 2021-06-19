@@ -4,7 +4,7 @@ function detectarDispositivo() {
     let queDispositivo = toMatch.some((toMatchItem) => { return navigator.userAgent.match(toMatchItem);});
 
     if (queDispositivo == true) {
-        document.getElementById("aviso-compatibilidad").style="visibility: visible;";
+        document.getElementById("aviso-compatibilidad").style="visibility: hidden;";
         console.log("detectó que NO es mobile y muestra el aviso de compatibilidad");
       } // ELSE: no se necesitó la variable "si es PC", pero se puede perfeccionar el IF con otros casos
 
