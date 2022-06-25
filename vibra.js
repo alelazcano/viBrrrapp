@@ -46,3 +46,5 @@ function vib(param){
         break;
     }
 }
+
+vib()
